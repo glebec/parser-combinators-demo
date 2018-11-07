@@ -1,0 +1,20 @@
+Version ::= VersionCore ('-' PreRelease)? ('+' Meta)?
+
+VersionCore ::= Major '.' Minor '.' Patch
+Major ::= Numeric
+Minor ::= Numeric
+Patch ::= Numeric
+PreRelease ::= PreReleaseId ('.' PreReleaseId)*
+Meta       ::= MetaId ('.' MetaId)*
+
+PreReleaseId ::= AlphaNums | Numeric
+MetaId       ::= IdChar+
+
+Numeric   ::= '0' | ( PosNum Digit* )
+AlphaNums ::= Digit* NonNum IdChar*
+
+IdChar ::= NonNum | Digit
+
+NonNum ::= [A-Za-z-]
+Digit  ::= '0' | PosNum
+PosNum ::= [1-9]

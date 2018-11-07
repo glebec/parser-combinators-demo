@@ -1,0 +1,19 @@
+PROGRAM ::= COMMANDLIST;
+
+COMMANDLIST ::= COMMAND, ";", COMMANDLIST
+             |  COMMAND;
+
+COMMAND ::= "print", VARIABLE
+         |  "while", EXPRESSION, ":", COMMANDLIST, "end"
+         |  VARIABLE, "=", EXPRESSSION;
+
+EXPRESSION ::= NUMERAL
+            |  VARIABLE
+            |  "(", EXPRESSION, OPERATOR, EXPRESSION, ")";
+
+OPERATOR ::= "+"
+          |  "-";
+
+NUMERAL ::= DIGIT, { DIGIT };
+
+VARIABLE ::= LETTER, { LETTER };

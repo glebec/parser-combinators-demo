@@ -1,0 +1,8 @@
+PALINDROME ::= "a" PALINDROME "a" | "b" PALINDROME "b" |
+               "c" PALINDROME "c" | "d" PALINDROME "d" |
+               "e" PALINDROME "e" | ...                |
+               "z" PALINDROME "z";
+
+PALINDROME ::= LETTER;
+
+LETTER ::= "a" | "b" | "c" | ... | "y" | "z";
