@@ -33,3 +33,9 @@ This repo contains:
 - [Sample grammars to work off of](docs)
 
 …plus any notes or ephemera that I may make while live coding.
+
+## Addendum
+
+Thanks all for listening! You can find an extended math example [here][gist].
+
+[gist]: https://gist.github.com/glebec/572196e2ca30d9afe09c38b4e9d2b227
