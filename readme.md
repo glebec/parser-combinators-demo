@@ -31,8 +31,7 @@ This repo contains:
 - [The parser library class implementation](parser.js)
 - [Example programs using the parser library](examples.js)
 - [Sample grammars to work off of](docs)
-
-…plus any notes or ephemera that I may make while live coding.
+- [The presentation slide deck](parser-deck.pdf)
 
 ## Addendum
 
